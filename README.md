@@ -1,12 +1,12 @@
 # Mestres do Mistério de Suspense
 
-Mergulhe no universo dos escritores de mistério e suspense com essa aplicação web interativa!
+Mergulhe no universo dos escritores de mistério e suspense com nossa aplicação web interativa!
 
 ## Sobre o Projeto
 
 Esta aplicação permite aos entusiastas da literatura policial explorar uma vasta gama de autores renomados no gênero de mistério e suspense. Com uma simples pesquisa por nome de autor ou gênero, você terá acesso a informações detalhadas sobre os mestres deste fascinante universo literário.
 
-Experimente agora: [Mestres do Mistério e Suspense](https://escritores-zeta.vercel.app)
+Experimente agora: <a href="https://escritores-zeta.vercel.app" target="_blank">Mestres do Mistério de Suspense</a>
 
 ## Funcionalidades
 
@@ -31,7 +31,7 @@ Implementamos validações robustas para garantir uma experiência de usuário f
 
 ## Como Utilizar
 
-1. Acesse [escritores-zeta.vercel.app](https://escritores-zeta.vercel.app)
+1. Acesse <a href="https://escritores-zeta.vercel.app" target="_blank">Mestres do Mistério de Suspense</a>
 2. Digite o nome de um autor ou gênero no campo de pesquisa
 3. Clique em "PESQUISAR" ou pressione Enter
 4. Explore os resultados e descubra novos autores!
