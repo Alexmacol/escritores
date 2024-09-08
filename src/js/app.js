@@ -64,4 +64,9 @@ function pesquisarEscritor() {
 
   // Atribui o HTML gerado à seção de resultados
   section.innerHTML = resultados;
+
+  // Usa setTimeout para limpar o campo após um breve delay
+  setTimeout(() => {
+    document.getElementById("campo-pesquisa").value = "";
+  }, 100);
 };

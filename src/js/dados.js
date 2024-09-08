@@ -343,3 +343,21 @@ let escritores = [
   }
 ];
 
+
+function pesquisarEscritor() {
+  let secaoResultados = document.getElementById("resultados-pesquisa");
+  // ... (resto do código permanece igual)
+  
+  // Alterar a construção do HTML:
+  resultados += `
+    <div class="resultados__item">
+      <h2 class="resultados__item-titulo">
+        <a href="${escritor.link}" class="resultados__item-link" target="_blank">${escritor.nome}</a>
+      </h2>
+      <p class="resultados__item-descricao">
+        ${escritor.descricao}
+      </p>
+      <a href=${escritor.link} class="resultados__item-link" target="_blank" rel="noopener">Saiba Mais</a>
+    </div>
+  `;
+}
