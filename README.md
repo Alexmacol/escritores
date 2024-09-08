@@ -1,6 +1,6 @@
 # Mestres do Mistério e Suspense
 
-Explore o mundo dos escritores de mistério e suspense com nossa aplicação web interativa!
+Explore o mundo dos escritores de mistério e suspense com essa aplicação web interativa!
 
 ## Sobre o Projeto
 
