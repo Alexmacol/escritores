@@ -6,7 +6,7 @@ Mergulhe no universo dos escritores de mistério e suspense com essa aplicação
 
 Esta aplicação permite aos entusiastas da literatura policial explorar uma vasta gama de autores renomados no gênero de mistério e suspense. Com uma simples pesquisa por nome de autor ou gênero, você terá acesso a informações detalhadas sobre os mestres deste fascinante universo literário.
 
-Experimente agora: [Mestres do Mistério de Suspense](https://escritores-zeta.vercel.app)
+Experimente agora: [Mestres do Mistério e Suspense](https://escritores-zeta.vercel.app)
 
 ## Funcionalidades
 
