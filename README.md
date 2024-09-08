@@ -6,7 +6,7 @@ Explore o mundo dos escritores de mistério e suspense com essa aplicação web 
 
 Esta aplicação permite aos usuários pesquisar por autores famosos de mistério, suspense e ficção policial. Basta digitar o nome do autor ou um gênero relacionado, e você receberá informações detalhadas sobre os escritores correspondentes.
 
-Acesse a aplicação: [Mistério/Suspense](https://escritores-zeta.vercel.app)
+Acesse a aplicação: [Mestres do Mistério e Suspense]([https://escritores-zeta.vercel.app](https://escritores-zeta.vercel.app/))
 
 ## Funcionalidades
 
