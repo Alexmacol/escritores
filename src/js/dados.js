@@ -1,15 +1,15 @@
-let escritores = [
+export const escritores = [
   // Estados Unidos
   {
     nome: "Edgar Allan Poe",
-    tags: "terror gótico mistério macabro poesia",
+    tags: "terror gotico misterio macabro poesia",
     nascimento: 1809,
     falecimento: 1849,
     nacionalidade: "Americana",
     obras_destaque: ["O Corvo", "A Queda da Casa de Usher", "O Coração Revelador"],
     epoca: "Século XIX",
     genero_principal: "Conto",
-    descricao: "Escritor norte-americano, poeta e crítico literário, conhecido por suas obras que exploram temas como morte, loucura e o sobrenatural. É considerado um dos pioneiros do gênero de terror e um dos mais influentes escritores da língua inglesa.",
+    descricao: "Escritor norte-americano, poeta e crítico literário, conhecido por suas obras que exploram temas como morte, loucura e o sobrenatural. É considerado um dos pioneiros do gênero de terror e um dos mais influentes escritores da língua inglesa. Criador do detetive Auguste Dupin, que se tornou um dos personagens mais icônicos da literatura policial.",
     link: "https://pt.wikipedia.org/wiki/Edgar_Allan_Poe"
   },
   {
@@ -38,7 +38,7 @@ let escritores = [
   },
   {
     nome: "Robert Ludlum",
-    tags: "thriller espionagem espião conspiração ação Jason Bourne",
+    tags: "thriller espionagem espiao conspiracao acao Jason Bourne",
     nascimento: 1927,
     falecimento: 2001,
     nacionalidade: "Americana",
@@ -50,7 +50,7 @@ let escritores = [
   },
   {
     nome: "Patricia Highsmith",
-    tags: "suspense psicológico noir homicídio LGBTQIA+ existencialismo",
+    tags: "suspense psicologico noir homicidio LGBTQIA existencialismo",
     nascimento: 1921,
     falecimento: 1995,
     nacionalidade: "Americana",
@@ -62,7 +62,7 @@ let escritores = [
   },
   {
     nome: "James Ellroy",
-    tags: "noir hard-boiled Los Angeles histórico violento obscuro",
+    tags: "noir hard-boiled Los Angeles historico violento obscuro",
     nascimento: 1948,
     falecimento: "-",
     nacionalidade: "Americana",
@@ -74,7 +74,7 @@ let escritores = [
   },
   {
     nome: "Harlan Coben",
-    tags: "thriller suspense mistério desaparecimento família trama rápida",
+    tags: "thriller suspense misterio desaparecimento familia trama rapida",
     nascimento: 1962,
     falecimento: "-",
     nacionalidade: "Americana",
@@ -98,7 +98,7 @@ let escritores = [
   },
   {
     nome: "Karin Slaughter",
-    tags: "thriller policial suspense médico-legal violencia violência Georgia Will Trent",
+    tags: "thriller policial suspense medico legal violencia Georgia Will Trent",
     nascimento: 1971,
     falecimento: "-",
     nacionalidade: "Americana",
@@ -110,7 +110,7 @@ let escritores = [
   },
   {
     nome: "Don Winslow",
-    tags: "policial crime organizado cartel drogas violência realismo sátira social ação EUA",
+    tags: "policial crime organizado cartel drogas violencia realismo satira social acao EUA",
     nascimento: 1953,
     falecimento: "-",
     nacionalidade: "Americana",
@@ -122,7 +122,7 @@ let escritores = [
   },
   {
     nome: "Patricia Cornwell",
-    tags: "policial suspense médico-legal médica legista forense EUA Kay Scarpetta",
+    tags: "policial suspense medico legal medica legista forense EUA Kay Scarpetta",
     nascimento: 1956,
     falecimento: "-",
     nacionalidade: "Americana",
@@ -134,7 +134,7 @@ let escritores = [
   },
   {
     nome: "Lee Child",
-    tags: "policial suspense ação americano exército solitário Jack Reacher",
+    tags: "policial suspense acao americano exercito solitario Jack Reacher",
     nascimento: 1954,
     falecimento: "-",
     nacionalidade: "Americana",
@@ -146,7 +146,7 @@ let escritores = [
   },
   {
     nome: "Daniel Silva",
-    tags: "espionagem thriller intriga internacional arte Gabriel Allon",
+    tags: "espionagem espiao thriller intriga internacional arte Gabriel Allon",
     nascimento: 1960,
     falecimento: "-",
     nacionalidade: "Americana",
@@ -159,7 +159,7 @@ let escritores = [
   // Canadá
   {
     nome: "Louise Penny",
-    tags: "policial mistério suspense canadense rural charmoso Inspetor Gamache",
+    tags: "policial misterio suspense canadense rural charmoso Inspetor Gamache",
     nascimento: 1959,
     falecimento: "-",
     nacionalidade: "Canadense",
@@ -185,7 +185,7 @@ let escritores = [
   // França
   {
     nome: "Maurice Leblanc",
-    tags: "policial intriga detetive amador ladrão Arsène Lupin",
+    tags: "policial intriga detetive amador ladrao Arsene Lupin",
     nascimento: 1864,
     falecimento: 1941,
     nacionalidade: "Francesa",
@@ -198,7 +198,7 @@ let escritores = [
   // Inglaterra
   {
     nome: "Agatha Christie",
-    tags: "mistério clássico detetive amador assassinato enigmas Hercule Poirot Miss Marple",
+    tags: "misterio classico detetive amador assassinato enigmas Hercule Poirot Miss Marple",
     nascimento: 1890,
     falecimento: 1976,
     nacionalidade: "Britânica",
@@ -210,7 +210,7 @@ let escritores = [
   },
   {
     nome: "Arthur Conan Doyle",
-    tags: "detetive mistério clássico Sherlock Holmes Londres dedução vitoriano vitoriana",
+    tags: "detetive misterio classico Sherlock Holmes Londres deducao vitoriano vitoriana",
     nascimento: 1859,
     falecimento: 1930,
     nacionalidade: "Escocesa (posteriormente obteve cidadania Britânica)",
@@ -222,7 +222,7 @@ let escritores = [
   },
   {
     nome: "G. K. Chesterton",
-    tags: "ensaio filosofia religião paradoxo apologia humor ficção mistério padre Brown",
+    tags: "ensaio filosofia religiao paradoxo apologia humor misterio padre Brown",
     nascimento: 1874,
     falecimento: 1936,
     nacionalidade: "Britânica",
@@ -234,7 +234,7 @@ let escritores = [
   },
   {
     nome: "Wilkie Collins",
-    tags: "mistério suspense gótico criminal feminino serializado vitoriano",
+    tags: "misterio suspense gotico criminal feminino serializado vitoriano",
     nascimento: 1824,
     falecimento: 1889,
     nacionalidade: "Britânica",
@@ -246,7 +246,7 @@ let escritores = [
   },
   {
     nome: "John le Carré",
-    tags: "espionagem Guerra Fria thriller político George Smiley",
+    tags: "espionagem espiao Guerra Fria thriller politico George Smiley",
     nascimento: 1931,
     falecimento: 2020,
     nacionalidade: "Britânica",
@@ -258,7 +258,7 @@ let escritores = [
   },
   {
     nome: "Ruth Rendell",
-    tags: "suspense psicológico psicopatia suburbano Inglaterra Wexford",
+    tags: "suspense psicologico psicopatia suburbano Inglaterra Wexford",
     nascimento: 1930,
     falecimento: 2015,
     nacionalidade: "Britânica",
@@ -270,7 +270,7 @@ let escritores = [
   },
   {
     nome: "Val McDermid",
-    tags: "suspense psicológico psicopatia criminalística feminismo Escócia Tony Hill",
+    tags: "suspense psicologico psicopatia criminalistica feminismo Escocia Tony Hill",
     nascimento: 1955,
     falecimento: "-",
     nacionalidade: "Escocesa",
@@ -283,7 +283,7 @@ let escritores = [
   // Brasil
   {
     nome: "Rubem Fonseca",
-    tags: "policial noir violência realismo sujo corrupção",
+    tags: "policial noir violencia realismo sujo corrupcao",
     nascimento: 1925,
     falecimento: 2019,
     nacionalidade: "Brasileira",
@@ -295,7 +295,7 @@ let escritores = [
   },
   {
     nome: "Luiz Alfredo Garcia-Roza",
-    tags: "policial brasileiro psicanálise Rio de Janeiro Brasil Espinosa intriga social",
+    tags: "policial brasileiro psicanalise Rio de Janeiro Brasil Espinosa intriga social",
     nascimento: 1936,
     falecimento: 2020,
     nacionalidade: "Brasileira",
@@ -307,7 +307,7 @@ let escritores = [
   },
   {
     nome: "Raphael Montes",
-    tags: "suspense terror jovem adulto contemporâneo psicológico Brasil brasileiro",
+    tags: "suspense terror jovem adulto contemporaneo psicologico Brasil brasileiro",
     nascimento: 1990,
     falecimento: "-",
     nacionalidade: "Brasileira",
@@ -319,7 +319,7 @@ let escritores = [
   },
   {
     nome: "Cláudia Lemes",
-    tags: "suspense terror brasileira feminismo serial killer dark-fiction Claudia",
+    tags: "suspense terror brasileira feminismo serial killer dark Claudia",
     nascimento: 1979,
       falecimento: "-",
     nacionalidade: "Brasileira",
@@ -332,7 +332,7 @@ let escritores = [
   // Noruega
   {
     nome: "Jo Nesbø",
-    tags: "thriller psicológico noir escandinavo complexo Harry Hole",
+    tags: "thriller psicologico noir escandinavo complexo Harry Hole",
     nascimento: 1960,
     nacionalidade: "Norueguesa",
     obras_destaque: ["Baratas", "O Morcego", "O Homem de Neve", "O Leopardo"],
@@ -342,22 +342,3 @@ let escritores = [
     link: "https://pt.wikipedia.org/wiki/Jo_Nesbø"
   }
 ];
-
-
-function pesquisarEscritor() {
-  let secaoResultados = document.getElementById("resultados-pesquisa");
-  // ... (resto do código permanece igual)
-  
-  // Alterar a construção do HTML:
-  resultados += `
-    <div class="resultados__item">
-      <h2 class="resultados__item-titulo">
-        <a href="${escritor.link}" class="resultados__item-link" target="_blank">${escritor.nome}</a>
-      </h2>
-      <p class="resultados__item-descricao">
-        ${escritor.descricao}
-      </p>
-      <a href=${escritor.link} class="resultados__item-link" target="_blank" rel="noopener">Saiba Mais</a>
-    </div>
-  `;
-}
