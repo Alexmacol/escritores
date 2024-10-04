@@ -12,9 +12,7 @@ import { escritores } from './dados.js';
 export function buscarEscritores(campoPesquisa) {
   let resultados = []; // Cria um array para armazenar os resultados da pesquisa
 
-  // Itera sobre o array de escritores
   for (let escritor of escritores) {
-    // Converte o nome, descrição e tags do escritor para minúsculas
     let nome = escritor.nome.toLowerCase();
     let descricao = escritor.descricao.toLowerCase();
     let tags = escritor.tags.toLowerCase();
@@ -28,13 +26,11 @@ export function buscarEscritores(campoPesquisa) {
      * @returns {boolean} True se o termo de pesquisa for encontrado, False caso contrário.
      */
     if (nome.includes(campoPesquisa) || descricao.includes(campoPesquisa) || tags.includes(campoPesquisa)) {
-      // Se encontrar uma correspondência, adiciona o resultado ao array de resultados
       resultados.push(escritor);
     }
   }
 
   if (resultados.length === 0) {
-    // Se nenhum resultado for encontrado, retorna um array vazio
     return [];
   }
   return resultados;

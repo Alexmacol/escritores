@@ -8,6 +8,5 @@ export function highlightMatch(text, term) {
   // Cria uma expressão regular que ignora maiúsculas/minúsculas para encontrar o termo
   const regex = new RegExp(`(${term})`, 'gi');
 
-  // Substitui o termo encontrado pelo termo destacado usando a tag <mark>
   return text.replace(regex, "<mark>$1</mark>");
 }

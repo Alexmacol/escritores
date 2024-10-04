@@ -2,72 +2,46 @@
 <html lang="pt-BR">
 
 <head>
-  <!-- Metadados do documento -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Link para o arquivo de estilos CSS externo -->
   <link rel="stylesheet" href="./src/css/styles.css">
-
-  <!-- Título da página exibido na aba do navegador -->
+  
   <title>Mestres do Mistério e Suspense</title>
 </head>
 
 <body>
-  <!-- Cabeçalho principal da página -->
   <header>
-    <h1>
-      <!-- Título principal com decorações (barras verticais) nas laterais -->
-      <span>|</span>Mestres do Mistério e Suspense<span>|</span>
-    </h1>
+    <h1>|Mestres do Mistério e Suspense|</h1>
   </header>
 
-  <!-- Conteúdo principal da página -->
   <main>
-    <!-- Seção de pesquisa -->
     <section class="pesquisa">
       <div class="input-container">
-        <!-- Campo de entrada para pesquisa -->
         <input type="text" id="campo-pesquisa" placeholder=" " />
-        
-        <!-- Rótulo flutuante para o campo de pesquisa -->
         <label for="campo-pesquisa" class="floating-label">Escritor(a) ou Gênero Policial</label>
-        
-        <!-- Botão de pesquisa com ícone de lupa -->
         <button type="button" id="botao-pesquisa">
           <img class="lupa" src="./src/image/lupa.png" alt="lupa de busca" />
         </button>
       </div>
-
-      <!-- Spinner de carregamento, inicialmente oculto -->
       <div id="spinner" class="spinner"></div>
     </section>
 
-    <!-- Seção para exibir dinamicamente os resultados da pesquisa -->
     <section class="resultados-pesquisa" id="resultados-pesquisa">
     </section>
   </main>
 
-  <!-- Rodapé da página -->
   <footer>
-    <p>
-      <!-- Informações de direitos autorais -->
-      &copy; 2024 - Mistérios|Suspense. Todos os direitos reservados.
-    </p>
-    <p>
-      <!-- Informações de contato -->
-      Entre em contato: misterio@suspense.com.br
-    </p>
+    <p>&copy; 2024 - Mistérios|Suspense. Todos os direitos reservados.</p>
+    <p>Entre em contato: misterio@suspense.com.br</p>
   </footer>
 
-  <!-- Inclusão dos scripts JavaScript -->
-  <!-- O atributo 'defer' garante que os scripts sejam executados após o carregamento do HTML -->
   <script type="module" src="./src/js/dados.js" defer></script>
   <script type="module" src="./src/js/validacao.js" defer></script>
-  <script type="module" src="./src/js/spinner.js" defer></script>
   <script type="module" src="./src/js/spinner.js" defer></script>
   <script type="module" src="./src/js/destaque.js" defer></script>
   <script type="module" src="./src/js/exibe.js" defer></script>
   <script type="module" src="./src/js/app.js" defer></script>
 </body>
+
 </html>
