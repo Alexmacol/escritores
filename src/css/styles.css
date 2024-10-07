@@ -203,13 +203,13 @@ span {
   /* Define a altura máxima da área de resultados */
   overflow-y: auto;
   /* Adiciona rolagem vertical quando necessário */
-  margin-top: 1rem;
+  margin-top: 2rem;
   /* Espaçamento superior */
   padding: 1rem;
   /* Espaçamento interno */
   border-radius: 0.6rem;
   /* Bordas arredondadas */
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
   /* Espaçamento inferior */
   scroll-behavior: smooth;
   /* Ativa a rolagem suave */
@@ -288,11 +288,13 @@ span {
   /* Reduz ligeiramente o tamanho ao clicar */
 }
 
-/* Estilo para a descrição meta dentro dos itens */
-.descricao-meta {
+/* Estilo para a dados dentro dos itens */
+.descricao-meta,
+.data-nascimento-falecimento,
+.nacionalidade {
   color: #ffffff;
   /* Cor do texto */
-  margin: 0.5rem 0;
+  margin: 0.5rem 0.5rem;
   /* Margem superior e inferior */
 }
 
@@ -350,7 +352,7 @@ footer {
   /* Remove o espaçamento interno */
   width: 100%;
   /* O rodapé ocupa toda a largura */
-  position: absolute;
+  position: fixed;
   /* Posiciona o rodapé no final da página */
   bottom: 0;
   /* Alinha o rodapé ao fundo */

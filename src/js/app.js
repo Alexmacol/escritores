@@ -1,7 +1,6 @@
 /**
  * @file app.js
  * @description Arquivo principal que contém a lógica da aplicação de pesquisa de escritores.
- * @author [AlexMacOl]
  */
 
 import { limparCampoPesquisa, validarCampo } from './validacao.js';

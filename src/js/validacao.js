@@ -19,6 +19,7 @@ export function validarCampo() {
    * @param {string} campoPesquisa - O valor do campo de pesquisa.
    * @returns {boolean} True se o campo começar com um espaço em branco, False caso contrário.
    */
+
   if (campoPesquisa.startsWith(' ')) {
     return "Por favor, inicie com uma letra!";
   }
@@ -28,6 +29,7 @@ export function validarCampo() {
    * @param {string} campoPesquisa - O valor do campo de pesquisa.
    * @returns {boolean} True se o campo estiver vazio ou contiver apenas espaços em branco, False caso contrário.
    */
+
   if (!campoPesquisa.trim()) {
     return "Entre com o nome do escritor(a) ou o gênero policial";
   }
@@ -37,6 +39,7 @@ export function validarCampo() {
    * @param {string} campoPesquisa - O valor do campo de pesquisa.
    * @returns {boolean} True se o campo contiver apenas letras e espaços, False caso contrário.
    */
+  
   if (!/^[a-zA-Z ]+$/.test(campoPesquisa)) {
     return "Por favor, digite apenas letras e espaços.";
   }
