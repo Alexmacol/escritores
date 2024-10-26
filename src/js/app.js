@@ -8,7 +8,7 @@ import { mostrarSpinner, esconderSpinner } from './spinner.js';
 import { buscarEscritores } from './busca.js';
 import { exibirResultados } from './exibe.js';
 
-function pesquisarEscritor() {
+async function pesquisarEscritor() {
   let section = document.getElementById("resultados-pesquisa");
   let campoPesquisa = document.getElementById("campo-pesquisa").value.trim().toLowerCase();
   const erroValidacao = validarCampo();
@@ -17,7 +17,8 @@ function pesquisarEscritor() {
     return;
   }
   mostrarSpinner();
-  let resultados = buscarEscritores(campoPesquisa);
+  let resultados = await buscarEscritores(campoPesquisa);
+  
   setTimeout(() => {
     esconderSpinner();
     if (resultados.length === 0) {

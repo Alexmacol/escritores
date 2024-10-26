@@ -1,21 +1,21 @@
-/**
+/*
  * Importa a função highlightMatch do módulo 'destaque.js'.
  * @module destaque
  */
 import { highlightMatch } from './destaque.js';
 
-/**
+/*
  * Função para processar e exibir os resultados da pesquisa.
  * @param {Array} resultados - Array contendo os objetos de escritores encontrados na pesquisa.
  * @param {string} campoPesquisa - O termo de pesquisa fornecido pelo usuário.
  * @returns {string} O HTML contendo os resultados da pesquisa.
  */
 export function exibirResultados(resultados, campoPesquisa) {
-  let resultadosHtml = ""; // Inicializa uma string vazia para armazenar o HTML dos resultados
+  let resultadosHtml = ""; //* Inicializa uma string vazia para armazenar o HTML dos resultados
 
-  // Itera sobre o array de resultados
+  //* Itera sobre o array de resultados
   for (let escritor of resultados) {
-    /**
+    /*
      * Cria o HTML para cada resultado encontrado.
      * @param {Object} escritor - Objeto contendo informações sobre o escritor.
      * @param {string} escritor.nome - O nome do escritor.
