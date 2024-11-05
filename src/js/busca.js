@@ -28,6 +28,10 @@ export async function buscarEscritores(campoPesquisa) {
         resultados.push(escritor);
       }
     }
+
+    //* Ordena os resultados pelo nome do escritor em ordem alfabética
+    resultados.sort((a, b) => a.nome.localeCompare(b.nome));
+
     return resultados; //* Retorna os resultados encontrados
 
   } catch (error) {
