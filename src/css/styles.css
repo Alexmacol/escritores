@@ -30,16 +30,17 @@ body {
 
 /* Estilo do cabeçalho (h1) */
 h1 {
-  margin-top: 0;
-  /* Remove a margem superior */
+  margin-top: 1rem;
+  /* Ajusta a margem superior */
   font-size: 2rem;
   /* Define o tamanho da fonte */
   color: #f0a504;
   /* Cor do texto */
   text-align: center;
   /* Centraliza o texto */
-  letter-spacing: 0.4rem;
+  letter-spacing: 0.3rem;
   /* Adiciona espaçamento entre as letras */
+  margin-bottom: 1rem;
 }
 
 /* Estilo para o elemento span */
@@ -250,7 +251,7 @@ span {
   /* Inicialmente invisível para efeito de fade-in */
   transform: translateY(20px);
   /* Move o item para baixo para o efeito de entrada */
-  transition: opacity 0.5s ease, transform 0.5s ease;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
   /* Transição suave para os efeitos */
 }
 
@@ -264,8 +265,8 @@ span {
 
 /* Define um atraso para criar o efeito de cascata na exibição dos resultados */
 .item-resultado:nth-child(2) {
-  transition-delay: 0.1s;
-  /* Atraso de 100ms para o segundo item */
+  transition-delay: 0.2s;
+  /* Atraso de 200ms para o segundo item */
 }
 
 .item-resultado:nth-child(3) {
@@ -348,12 +349,10 @@ mark {
   from {
     background-color: transparent;
   }
-
   /* Começa com fundo transparente */
   to {
     background-color: yellow;
   }
-
   /* Transição para fundo amarelo */
 }
 

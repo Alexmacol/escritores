@@ -240,6 +240,18 @@
     "link": "https://pt.wikipedia.org/wiki/Wilkie_Collins"
   },
   {
+    "nome": "Ian Fleming",
+    "tags": "britanica britanico ingles inglesa espiao espionagem thriller aventura acao james bond agente 007",
+    "nascimento": 1908,
+    "falecimento": 1964,
+    "nacionalidade": "Britânica",
+    "obras_destaque": ["Cassino Royale", "Moscou Contra 007", "Goldfinger"],
+    "epoca": "Pós-Guerra",
+    "genero_principal": "Espionagem",
+    "descricao": "Ian Fleming, militar, escritor e jornalista, foi o criador do icônico agente 007, James Bond. Suas obras de espionagem definiram o gênero e continuam a influenciar a cultura popular. Seus livros, 11 romances e duas coletâneas de contos focados no agente 007, estão entre os mais vendidos de ficção de todos os tempos, com mais cem milhões de cópias vendidas mundialmente, colocando-o como um dos autores mais renomados de seu tempo.",
+    "link": "https://pt.wikipedia.org/wiki/Ian_Fleming"
+  },
+  {
     "nome": "John le Carré",
     "tags": "britanica britanico ingles inglesa espionagem espiao Guerra Fria thriller politico George Smiley",
     "nascimento": 1931,
@@ -340,7 +352,7 @@
     "tags": "americana americano suspense horror  terror macabro thriller",
     "nascimento": 1945,
     "falecimento": "-",
-    "nacionalidade": "Americano",
+    "nacionalidade": "Americana",
     "obras_destaque": ["Odd Thomas", "Watchers", "Intensity"],
     "epoca": "Contemporâneo",
     "genero_principal": "Suspense, Horror",
@@ -352,24 +364,12 @@
     "tags": "americana americano techno thrillher acao militar espiao espionagem",
     "nascimento": 1947,
     "falecimento": 2013,
-    "nacionalidade": "Americano",
+    "nacionalidade": "Americana",
     "obras_destaque": ["A Caçada Ao Outubro Vermelho", "Jogos Patrióticos", "Perigo Real e Imediato"],
     "epoca": "Contemporâneo",
     "genero_principal": "Espionagem, Militar",
     "descricao": "Tom Clancy foi um escritor, historiador, por vezes considerado inventor do techno-thriller, criando histórias complexas de espionagem e militares. Seus livros são conhecidos por seu realismo e detalhes técnicos precisos. Personagem constante na maioria de suas obras, o agente Jack Ryan já foi adaptado para o cinema e para série televisa em streaming. John Clark outro personagem icônico em suas obras também esteve presente no cinema e no streaming.",
     "link": "https://pt.wikipedia.org/wiki/Tom_Clancy"
-  },
-  {
-    "nome": "Ian Fleming",
-    "tags": "britanica britanico espiao espionagem thriller aventura acao james bond agente 007",
-    "nascimento": 1908,
-    "falecimento": 1964,
-    "nacionalidade": "Britânica",
-    "obras_destaque": ["Cassino Royale", "Moscou Contra 007", "Goldfinger"],
-    "epoca": "Pós-Guerra",
-    "genero_principal": "Espionagem",
-    "descricao": "Ian Fleming, militar, escritor e jornalista, foi o criador do icônico agente 007, James Bond. Suas obras de espionagem definiram o gênero e continuam a influenciar a cultura popular. Seus livros, 11 romances e duas coletâneas de contos focados no agente 007, estão entre os mais vendidos de ficção de todos os tempos, com mais cem milhões de cópias vendidas mundialmente, colocando-o como um dos autores mais renomados de seu tempo.",
-    "link": "https://pt.wikipedia.org/wiki/Ian_Fleming"
   },
   {
     "nome": "James Rollins",
@@ -388,7 +388,7 @@
     "tags": "americano americana aventura acao misterio conspiracoes historia thriller historico cotton malone",
     "nascimento": 1955,
     "falecimento": "-",
-    "nacionalidade": "Americano",
+    "nacionalidade": "Americana",
     "obras_destaque": ["O Legado Dos Templários", "O Quarto de Âmbar", "A Profecia Romanov"],
     "epoca": "Contemporâneo",
     "genero_principal": "Mistério, Histórico",

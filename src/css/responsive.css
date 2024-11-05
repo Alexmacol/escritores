@@ -1,7 +1,7 @@
 /* Estilos responsivos para telas médias (tablets) */
 @media (max-width: 768px) {
   body{
-    padding-top: 6%;
+    padding-top: 3%;
   }
 
   h1 {
@@ -28,7 +28,7 @@
   }
 
   .resultados-pesquisa {
-    width: 95%;
+    width: 90%;
     /* Largura da caixa de resultados em telas pequenas */
     height: 70vh;
     /* Altura da caixa de resultados em telas médias */
@@ -48,7 +48,7 @@
 /* Estilos responsivos para telas pequenas (tablets até 600px) */
 @media (max-width: 600px) {
   body {
-      padding-top: 2%;
+      padding-top: 3%;
     }
 
   h1 {

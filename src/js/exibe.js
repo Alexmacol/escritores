@@ -40,7 +40,7 @@ export function exibirResultados(resultados, campoPesquisa) {
           ${escritor.falecimento && escritor.falecimento !== '-' ? ` - Morte: ${escritor.falecimento}` : '- ( Em atividade )'}
         </p>
         <!-- Destaca a descrição com o termo de pesquisa -->
-        <p class="descricao-meta">${highlightMatch(escritor.descricao, campoPesquisa)}</p>
+        <p class="descricao-meta">${highlightMatch(escritor.descricao, campoPesquisa)}</p><br>
         <a href="javascript:void(0);" class="saiba-mais">Saiba mais</a>
       </div>
     `;
