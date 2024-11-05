@@ -22,7 +22,7 @@ export function exibirResultados(resultados, campoPesquisa) {
      * @param {string} escritor.link - O link para mais informações sobre o escritor.
      * @param {string} escritor.nacionalidade - nacionalidade do escritor.
      * @param {string} escritor.nascimento - data de nascimento do escritor.
-     * @param {string} escritor.falecimento - data de nascimento do escritor.
+     * @param {string} escritor.falecimento - data de facimento do escritor.
      * @param {string} escritor.descricao - A descrição do escritor.
      * @param {string} campoPesquisa - O termo de pesquisa fornecido pelo usuário.
      */
@@ -34,8 +34,11 @@ export function exibirResultados(resultados, campoPesquisa) {
         </h2>
         <!-- Adiciona a nacionalidade  do escritor -->
         <p class="nacionalidade">Nacionalidade:  ${escritor.nacionalidade}</p>       
-        <!-- Adiciona a data de nascimento e falecimento do escritor -->
-        <p class="data-nascimento-falecimento">Nascimento: ${escritor.nascimento}  -  Falecimento: ${escritor.falecimento}</p>
+        <!-- Adiciona a data de nascimento e morte do escritor -->
+        <p class="data-nascimento-falecimento">
+          Nascimento: ${escritor.nascimento}
+          ${escritor.falecimento && escritor.falecimento !== '-' ? ` - Morte: ${escritor.falecimento}` : '- ( Em atividade )'}
+        </p>
         <!-- Destaca a descrição com o termo de pesquisa -->
         <p class="descricao-meta">${highlightMatch(escritor.descricao, campoPesquisa)}</p>
         <a href="javascript:void(0);" class="saiba-mais">Saiba mais</a>
