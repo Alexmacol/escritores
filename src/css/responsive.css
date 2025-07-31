@@ -1,126 +1,75 @@
-/* Estilos responsivos para telas médias (tablets) */
 @media (max-width: 768px) {
-  body{
-    padding-top: 3%;
-  }
-
   h1 {
-    font-size: 2rem;
-    /* Tamanho da fonte em telas pequenas */
+    font-size: 1rem;
     letter-spacing: 0.2rem;
-    /* Espaçamento entre letras em telas médias */
   }
 
-    .input-container input {
-      flex-basis: 100%;
-    }
+  .input-container input {
+    flex-basis: 100%;
+  }
 
-  section input {
+  section .citacao .citacao-container {
+    text-align: justify;
+  }
+
+  section .input {
     width: 100%;
-    /* Largura total dos inputs em telas médias */
   }
 
-  section button {
+  section .button {
     padding: 0.6rem 1.1rem;
-    /* Espaçamento interno do botão em telas médias */
     font-size: 0.9rem;
-    /* Tamanho da fonte do botão em telas pequenas */
   }
 
   .resultados-pesquisa {
     width: 90%;
-    /* Largura da caixa de resultados em telas pequenas */
-    height: 70vh;
-    /* Altura da caixa de resultados em telas médias */
+    height: 80%;
   }
 
   .item-resultado h2 {
     font-size: 1.2rem;
-    /* Tamanho da fonte dos títulos em telas pequenas */
   }
 
   footer {
     font-size: 0.9rem;
-    /* Tamanho da fonte do rodapé em telas pequenas */
   }
 }
 
-/* Estilos responsivos para telas pequenas (tablets até 600px) */
 @media (max-width: 600px) {
-  body {
-      padding-top: 3%;
-    }
-
-  h1 {
-    font-size: 1.75rem;
-    /* Tamanho da fonte em telas pequenas */
-    letter-spacing: 0.1rem;
-    /* Espaçamento entre letras em telas pequenas */
+  .citacao .citacao-container {
+    font-size: 1.2rem;
+    text-align: justify;
   }
 }
 
-
-/* Estilos responsivos para telas pequenas (mobile) */
 @media (max-width: 480px) {
-  body {
-      padding-top: 6%;
-    }
-  h1 {
-    font-size: 1.03rem;
-    /* Tamanho da fonte em telas pequenas */
-    letter-spacing: 0.1rem;
-    /* Espaçamento entre letras em telas pequenas */
+  .citacao .citacao-container{
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  .input-container input {
+    flex-basis: 100%;
   }
 
-.input-container input {
-  flex-basis: 100%;
-}
-
-  section input {
+  section .pesquisa {
     width: 17rem;
-    /* Largura total dos inputs em telas pequenas */
   }
 
-  section button {
+  section .button {
     padding: 0.6rem 1rem;
-    /* Espaçamento interno do botão em telas pequenas */
     font-size: 0.9rem;
-    /* Tamanho da fonte do botão em telas pequenas */
   }
 
   .resultados-pesquisa {
     width: 90%;
-    /* Largura da caixa de resultados em telas pequenas */
-    height: 70vh;
-    /* Altura da caixa de resultados em telas pequenas */
+    height: 80%;
   }
 
   .item-resultado h2 {
     font-size: 1.1rem;
-    /* Tamanho da fonte dos títulos em telas pequenas */
   }
 
   footer {
     font-size: 0.8rem;
-    /* Tamanho da fonte do rodapé em telas pequenas */
-  }
-}
-
-/* Estilos responsivos para telas ultra-pequenas (mobile) */
-@media (max-width: 360px) {
-    body {
-        padding-top: 6%;
-      }
-
-  .resultados-pesquisa {
-      width: 90%;
-      /* Largura da caixa de resultados em telas pequenas */
-      height: 70vh;
-      /* Altura da caixa de resultados em telas pequenas */
-    }
-
-  footer {
-    font-size: 0.6rem;
-    /* Tamanho da fonte do rodapé em telas ultra pequenas */
   }
 }

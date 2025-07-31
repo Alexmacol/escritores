@@ -41,7 +41,7 @@ export function validarCampo() {
    */
   
   if (!/^[a-zA-Z ]+$/.test(campoPesquisa)) {
-    return "Por favor, digite apenas letras e espaços.";
+    return "Por favor, digite apenas letras sem acentos.";
   }
   return "";
 }

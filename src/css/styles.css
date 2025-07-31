@@ -1,379 +1,250 @@
-/* Estilo do corpo da página */
 body {
   font-family: "Chakra Petch", sans-serif;
-  /* Define a fonte padrão */
   background-color: #01001f;
-  /* Define a cor de fundo da página */
-  display: flex;
-  /* Usa Flexbox para o layout */
-  flex-direction: column;
-  /* Alinha os itens verticalmente */
-  align-items: center;
-  /* Centraliza os itens horizontalmente */
-  justify-content: center;
-  /* Centraliza os itens verticalmente */
-  height: 100vh;
-  /* Define que a altura será a da viewport */
-  margin: 0;
-  /* Remove as margens padrão */
-  padding: 0 4%;
-  /* Adiciona espaçamento lateral */
 }
 
-/* Estilo para a mensagem de erro */
 .mensagem-erro {
   text-align: center;
-  /* Centraliza o texto */
-  color: #ffffff;
-  /* Define a cor do texto como branco */
+  font-size: 1.5rem;
+  color: #f8f3f3;
 }
 
-/* Estilo do cabeçalho (h1) */
-h1 {
-  margin-top: 1rem;
-  /* Ajusta a margem superior */
-  font-size: 2rem;
-  /* Define o tamanho da fonte */
-  color: #f0a504;
-  /* Cor do texto */
-  text-align: center;
-  /* Centraliza o texto */
-  letter-spacing: 0.3rem;
-  /* Adiciona espaçamento entre as letras */
-  margin-bottom: 1rem;
-}
-
-/* Estilo para o elemento span */
-span {
-  color: #f0a504;
-  /* Define a cor do texto */
-}
-
-.efeito-typewriter {
+.cabecalho {
   display: flex;
   justify-content: center;
+  padding: 10px;
 }
 
-.efeito-typewriter h1 {
-  font-family: monospace;
-  overflow: hidden;
-  white-space: nowrap;
-  animation: typing 3s steps(32) forwards;
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  max-width: 800px;
+  padding: 15px 4%;
+  margin: 0 auto;
 }
 
-@keyframes typing {
-  from {
-    width: 0;
-  }
-
-  to {
-    width: 100%;
-  }
+.citacao {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  border-radius: 0.6rem;
+  background: #27272a;
+  padding: 1.25;
+  margin-bottom: 1.56rem;
+}
+.citacao .citacao-container blockquote {
+  font-family: Georgia, serif;
+  font-size: 1.2rem;
+  border-left: 4px solid #c58402;
+  padding-left: 1rem;
+  margin: 20px 10px;
+  color: #fff;
+}
+.citacao .citacao-container .palavra {
+  color: #f0a504;
+}
+.citacao .citacao-container .apostrofe {
+  font-size: 2.5rem;
+  color: #f0a504;
+  font-style: italic;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  line-height: 0.7;
+}
+.citacao .citacao-container .italico {
+  font-style: italic;
 }
 
-/* Estilos para a seção de pesquisa */
 .pesquisa {
   display: flex;
-  /* Define o layout da seção como Flexbox */
   align-items: center;
-  /* Alinha verticalmente os elementos ao centro */
+  width: 100%;
 }
 
-/* Estilo para o contêiner que envolve o input, label e o botão */
 .input-container {
   position: relative;
-  /* Para permitir o posicionamento absoluto do label */
   width: 100%;
-  /* Largura completa do contêiner */
+  margin: 0 auto;
 }
 
-/* Estilo para o campo de entrada (input) */
 .input-container input {
   width: 100%;
-  /* O input ocupa toda a largura do contêiner */
   padding: 1rem 4rem 1rem 1rem;
-  /* Adiciona espaço para o botão e label */
   border: none;
-  /* Remove a borda padrão */
   border-top-right-radius: 1.5rem;
-  /* Arredonda apenas o canto superior direito */
   border-bottom-right-radius: 1.5rem;
-  /* Arredonda apenas o canto inferior direito */
   font-size: 1rem;
-  /* Tamanho do texto */
   box-sizing: border-box;
-  /* Inclui padding e borda na largura */
   position: relative;
-  /* Necessário para o foco */
 }
 
-/* Estilo para o label */
 .floating-label {
   position: absolute;
-  /* Posiciona o label dentro do input */
   left: 1rem;
-  /* Coloca o label à esquerda, alinhado com o texto do input */
   top: 50%;
-  /* Posiciona o label verticalmente ao centro */
   transform: translateY(-50%);
-  /* Centraliza o label no campo */
   font-size: 1rem;
-  /* Tamanho da fonte do label */
   color: #aaa;
-  /* Cor do label */
   transition: 0.3s ease all;
-  /* Transição suave para subir o label */
   pointer-events: none;
-  /* Impede que o label bloqueie o clique no input */
 }
 
-/* Quando o input receber foco ou houver texto */
-.input-container input:focus+.floating-label,
-.input-container input:hover+.floating-label,
-.input-container input:not(:placeholder-shown)~.floating-label {
+.input-container input:focus + .floating-label,
+.input-container input:hover + .floating-label,
+.input-container input:not(:placeholder-shown) ~ .floating-label {
   top: 0;
-  /* Move o label para o topo */
   transform: translateY(-100%);
-  /* Garante que o label esteja no topo */
   font-size: 0.8rem;
-  /* Reduz o tamanho da fonte */
   color: #fff;
-  /* Altera a cor do label quando o input está ativo */
 }
 
-/* Estilo para o botão de pesquisa, posicionado dentro do contêiner */
 .input-container button {
   position: absolute;
-  /* Posiciona o botão de forma absoluta dentro do contêiner */
   right: 0;
-  /* Alinha o botão à direita do contêiner */
   top: 0;
-  /* Alinha o botão no topo do contêiner */
   bottom: 0;
-  /* Alinha o botão no fundo do contêiner */
   border: none;
-  /* Remove a borda do botão */
   background-color: #c58702;
-  /* Cor de fundo do botão */
   color: #ffffff;
-  /* Cor do texto do botão */
   padding: 0 1.5rem;
-  /* Espaçamento interno do botão */
   font-size: 1rem;
-  /* Tamanho do texto do botão */
   border-top-right-radius: 1.5rem;
-  /* Arredonda apenas o canto superior direito */
   border-bottom-right-radius: 1.5rem;
-  /* Arredonda apenas o canto inferior direito */
   cursor: pointer;
-  /* Cursor de ponteiro ao passar sobre o botão */
   display: flex;
-  /* Usa flexbox para centralizar o conteúdo */
   align-items: center;
-  /* Centraliza verticalmente o conteúdo */
   justify-content: center;
-  /* Centraliza horizontalmente o conteúdo */
 }
 
-/* Estilo para o botão quando o mouse passa sobre ele */
 .input-container button:hover {
   background-color: #f0a504;
-  /* Altera a cor de fundo ao passar o mouse */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  /* Adiciona sombra ao botão */
 }
 
-/* Estilo para o spinner (indicador de carregamento) */
 .spinner {
   display: none;
-  /* Esconde o spinner por padrão */
   border: 8px solid #f3f3f3;
-  /* Borda clara ao redor do spinner */
   border-top: 8px solid #c58702;
-  /* Define a cor da borda superior para a rotação */
   border-radius: 50%;
-  /* Faz com que o spinner seja um círculo */
   width: 15px;
-  /* Define a largura do spinner */
   height: 15px;
-  /* Define a altura do spinner */
   animation: spin 1s linear infinite;
-  /* Animação de rotação contínua */
 }
 
-/* Define a animação de rotação para o spinner */
 @keyframes spin {
   0% {
     transform: rotate(0deg);
   }
 
-  /* Posição inicial */
   100% {
     transform: rotate(360deg);
   }
-
-  /* Completa uma rotação */
 }
 
-/* Estilos para a área de resultados da pesquisa */
 .resultados-pesquisa {
-  width: 90vh;
-  /* Define a largura máxima da área de resultados */
-  height: 60vh;
-  /* Define a altura máxima da área de resultados */
+  width: 90%;
+  height: 80%;
   overflow-y: auto;
-  /* Adiciona rolagem vertical quando necessário */
   margin-top: 2rem;
-  /* Espaçamento superior */
   padding: 1rem;
-  /* Espaçamento interno */
   border-radius: 0.6rem;
-  /* Bordas arredondadas */
   margin-bottom: 5rem;
-  /* Espaçamento inferior */
   scroll-behavior: smooth;
-  /* Ativa a rolagem suave */
 }
 
-/* Estilos para cada item de resultado */
 .item-resultado {
   background: #27272a;
-  /* Cor de fundo dos itens */
   border-radius: 0.6rem;
-  /* Bordas arredondadas */
+  border: 0.1rem, solid, #c58702;
+
   padding: 1rem;
-  /* Espaçamento interno */
   margin-bottom: 1rem;
-  /* Espaçamento inferior entre os itens */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  /* Sombra leve ao redor dos itens */
   opacity: 0;
-  /* Inicialmente invisível para efeito de fade-in */
   transform: translateY(20px);
-  /* Move o item para baixo para o efeito de entrada */
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-  /* Transição suave para os efeitos */
 }
 
-/* Exibe os itens gradualmente com o efeito de fade-in */
 .item-resultado.show {
   opacity: 1;
-  /* Torna o item visível */
   transform: translateY(0);
-  /* Move o item para sua posição original */
 }
 
-/* Define um atraso para criar o efeito de cascata na exibição dos resultados */
 .item-resultado:nth-child(2) {
   transition-delay: 0.2s;
-  /* Atraso de 200ms para o segundo item */
 }
 
 .item-resultado:nth-child(3) {
   transition-delay: 0.2s;
-  /* Atraso de 200ms para o terceiro item */
 }
 
-/* Estilo para o título dos itens de resultado */
 .item-resultado h2 {
   font-size: 1.5rem;
-  /* Tamanho da fonte */
   color: #ffffff;
-  /* Cor do texto */
 }
 
-/* Estilo para os links dentro dos itens de resultado */
 .item-resultado a {
   text-decoration: none;
-  /* Remove o sublinhado dos links */
   color: #ffffff;
-  /* Cor do texto dos links */
   transition: transform 0.3s ease, color 0.3s ease;
-  /* Animação suave ao passar o mouse */
 }
 
-/* Efeito ao passar o mouse sobre os links */
 .item-resultado a:hover {
   transform: scale(1.05);
-  /* Aumenta ligeiramente o tamanho ao passar o mouse */
   color: #f0a504;
-  /* Muda a cor do texto */
 }
 
-/* Estilo ao clicar nos itens de resultado */
 .item-resultado:active {
   box-shadow: 0 0 10px rgba(240, 165, 4, 0.8);
-  /* Efeito de brilho ao clicar */
   transform: scale(0.98);
-  /* Reduz ligeiramente o tamanho ao clicar */
 }
 
-/* Estilo para dados dentro dos itens */
 .descricao-meta,
 .data-nascimento-falecimento,
 .nacionalidade {
   color: #ffffff;
-  /* Cor do texto */
   margin: 0.5rem 0.5rem;
-  /* Margem superior e inferior */
 }
 
-/* Estilo para o parágrafo inicialmente colapsado */
 .item-resultado p {
   max-height: 0;
-  /* Começa colapsado */
   overflow: hidden;
-  /* Esconde o conteúdo extra */
   transition: max-height 0.3s ease;
-  /* Transição suave ao expandir */
 }
 
-/* Quando a classe 'expand' é aplicada, o parágrafo expande */
 .item-resultado.expand p {
   max-height: 100px;
-  /* Define o limite de expansão */
   overflow-y: auto;
-  /* Adiciona rolagem vertical quando necessário */
 }
 
-/* Animação para destacar o termo pesquisado */
 mark {
   background-color: yellow;
-  /* Define o fundo amarelo para destacar o termo */
   animation: highlight 0.5s ease;
-  /* Animação suave para o destaque */
 }
 
-/* Define a animação de destaque */
 @keyframes highlight {
   from {
     background-color: transparent;
   }
-  /* Começa com fundo transparente */
   to {
     background-color: yellow;
   }
-  /* Transição para fundo amarelo */
 }
 
-/* Estilos para o rodapé da página */
-footer {
+.rodape {
+  display: flex;
+  justify-content: center;
   background-color: #c58702;
-  /* Cor de fundo do rodapé */
   color: #02013b;
-  /* Cor do texto */
   font-weight: bold;
-  /* Fonte em negrito */
   text-align: center;
-  /* Centraliza o texto */
-  padding: 0;
-  /* Remove o espaçamento interno */
+  padding: 5px;
   width: 100%;
-  /* O rodapé ocupa toda a largura */
   position: fixed;
-  /* Posiciona o rodapé no final da página */
   bottom: 0;
-  /* Alinha o rodapé ao fundo */
-  font-size: .9rem;
-  /* Define o tamanho da fonte */
+  font-size: 0.8rem;
 }
